@@ -24,7 +24,6 @@
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
-
 }
 
 nav {
@@ -53,6 +52,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #424242;
+
 }
 
 .banner-content {
@@ -169,12 +169,75 @@ main {
     width: 165px;
 }
 
+/* features */
+.features {
+    display: flex;
+    margin: 130px;
+    gap: 100px;
+}
+
+.feature-content .some-facts {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .f-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img {
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.feature-img img {
+    width: 630px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 90px;
+
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* footer */
+footer {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 10px 240px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 /* responsive style */
 
 @media screen and (max-width: 576px) {
 
     header,
-    main {
+    main,
+    footer {
         padding: 20px;
     }
 
@@ -183,6 +246,40 @@ main {
     .facts-container,
     .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        margin: 0;
+        gap: 50px;
+    }
+
+    .feature-img {
+        width: 100%;
+        margin: 1px;
+    }
+
+    .feature-img img {
+        width: 100%;
+    }
+
+    .feature-img .ten-years-badge {
+        width: 65%;
+        position: static;
+        height: 90px;
+        padding: 5px;
+        margin: 0 15%;
+
+    }
+
+    .feature-img .ten-years-badge h2 {
+        padding: 5px 5px 0px 5px;
+        font-size: 35px;
+    }
+
+    .feature-img .ten-years-badge p {
+        padding: 0px 5px 5px 5px;
+        font-size: 25px;
     }
 
     .teams-img-container {
@@ -211,7 +308,8 @@ main {
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
     header,
-    main {
+    main,
+    footer {
         padding: 50px;
     }
 
